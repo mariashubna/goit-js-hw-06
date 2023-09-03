@@ -6,7 +6,8 @@ function formEvent(event) {
     const user = {};
     const {email, password} = event.currentTarget.elements;
     if (email.value === "" || password.value === "") {
-        alert("Всі поля мають бути заповненими!")
+        alert("Всі поля мають бути заповненими!");
+        return;
     } else {
         user.email = email.value;
         user.password = password.value;

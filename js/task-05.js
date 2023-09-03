@@ -1,7 +1,7 @@
 const ourInput = document.querySelector("#name-input");
 const ourSpan = document.querySelector("#name-output");
 
-document.addEventListener("click", ourEvent);
+document.addEventListener("input", ourEvent);
 
 function  ourEvent (event) {
 const contents = ourInput.value;

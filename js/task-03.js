@@ -14,15 +14,15 @@ const images = [
 ];
 
 const list = document.querySelector(".gallery");
+const liElements = [];
 images.forEach((image) => {
   const item = document.createElement("li");
   item.insertAdjacentHTML(
     'beforeend',
     `<img src="${image.url}" alt="${image.alt}">`
   );
- 
-  list.appendChild(item);
+  liElements.push(item);
 });
 
-
+ list.append(...liElements);
 
